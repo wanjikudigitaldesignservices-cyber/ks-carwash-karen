@@ -1,140 +1,134 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K's Carwash Karen | Car Wash + Amaron Batteries + Nyama Choma | Open Until 10PM</title>
-    <meta name="description" content="Karen's best carwash on Dagoretti Road. Full valet, Amaron batteries, best nyama choma in Karen. Open 7:30AM–10PM daily. Call +254 748 814167.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>K's Carwash Karen | Car Wash + Amaron Batteries + Nyama Choma | Open Until 10PM</title>
+<meta content="Karen's best carwash on Dagoretti Road. Full valet, Amaron batteries, best nyama choma in Karen. Open 7:30AM–10PM daily. Call +254 748 814167." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Open+Sans:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo"><span class="logo-k">K's</span> Carwash Karen</a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#carwash" class="nav-link">Carwash</a></li>
-                <li><a href="#batteries" class="nav-link">Batteries</a></li>
-                <li><a href="#nyama" class="nav-link">Nyama Choma</a></li>
-                <li><a href="#combos" class="nav-link">Combos</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <a href="https://wa.me/254748814167" class="nav-cta" target="_blank">📞 Call Us</a>
-            <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-        </div>
-    </nav>
-
-    <!-- HERO -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-badge">⭐ 5.0 Google Rating • Open Until 10PM</div>
-            <h1>WASH. FUEL UP. EAT.</h1>
-            <p class="hero-tagline">Karen's Most Complete Stop</p>
-            <p class="hero-sub">Professional carwash • Amaron batteries • Best nyama choma in Karen. All under one roof.</p>
-            <div class="hero-pillars">
-                <a href="#carwash" class="pillar"><span class="pillar-icon">🚗</span><span>CAR WASH</span></a>
-                <a href="#batteries" class="pillar"><span class="pillar-icon">🔋</span><span>BATTERIES</span></a>
-                <a href="#nyama" class="pillar"><span class="pillar-icon">🔥</span><span>NYAMA CHOMA</span></a>
-            </div>
-            <div class="hero-actions">
-                <a href="#carwash" class="btn btn-primary">Book a Wash</a>
-                <a href="https://wa.me/254748814167" class="btn btn-outline" target="_blank">WhatsApp Us</a>
-            </div>
-        </div>
-        <div class="hours-banner">🕐 Open Daily 7:30AM – 10:00PM | 7 Days a Week</div>
-    </section>
-
-    <!-- CARWASH -->
-    <section id="carwash" class="section">
-        <div class="container">
-            <div class="section-header"><span class="tag">🚗 Car Wash</span><h2>Professional Car Wash Services</h2></div>
-            <div class="services-grid">
-                <div class="svc-card"><h3>Exterior Wash</h3><p>Thorough hand wash, rinse, and dry. Tyre dressing included.</p><button class="btn btn-small" onclick="bookWash('Exterior Wash')">Book</button></div>
-                <div class="svc-card"><h3>Interior Vacuum</h3><p>Full vacuum, dashboard wipe, door panels, boot.</p><button class="btn btn-small" onclick="bookWash('Interior Vacuum')">Book</button></div>
-                <div class="svc-card featured"><h3>Full Valet</h3><p>Complete interior + exterior. Dashboard, seats, windows, tyre shine.</p><button class="btn btn-primary" onclick="bookWash('Full Valet')">Book</button></div>
-                <div class="svc-card"><h3>Waxing</h3><p>Hand wax application for lasting shine and paint protection.</p><button class="btn btn-small" onclick="bookWash('Waxing')">Book</button></div>
-            </div>
-            <!-- Booking Form -->
-            <div class="book-form-wrap" id="carwashBooking" style="display:none">
-                <h3>Book Your Wash</h3>
-                <form id="washForm">
-                    <div class="form-row"><div class="form-group"><label>Name *</label><input type="text" name="name" required></div><div class="form-group"><label>Phone *</label><input type="tel" name="phone" required></div></div>
-                    <div class="form-row"><div class="form-group"><label>Car Type</label><input type="text" name="car" placeholder="e.g. Toyota Prado"></div><div class="form-group"><label>Service</label><input type="text" name="service" id="washService" readonly></div></div>
-                    <div class="form-group"><label>Preferred Date</label><input type="date" name="date"></div>
-                    <button type="submit" class="btn btn-primary btn-full">Submit Booking</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- BATTERIES -->
-    <section id="batteries" class="section bat-section">
-        <div class="container">
-            <div class="section-header"><span class="tag bat-tag">🔋 Amaron Batteries</span><h2>Amaron Battery Sales & Installation</h2><p>Full range for sedan, SUV, and truck. Free battery testing. On-site installation.</p></div>
-            <div class="bat-grid">
-                <div class="bat-card"><h3>Sedan Batteries</h3><p>DIN55, DIN66, NS60 — for small to mid-size cars.</p><a href="https://wa.me/254748814167?text=Hi%2C%20I%20need%20an%20Amaron%20battery%20for%20my%20sedan" class="btn btn-small" target="_blank">Enquire on WhatsApp</a></div>
-                <div class="bat-card"><h3>SUV Batteries</h3><p>DIN88, DIN100 — for Land Cruisers, Prados, Range Rovers.</p><a href="https://wa.me/254748814167?text=Hi%2C%20I%20need%20an%20Amaron%20battery%20for%20my%20SUV" class="btn btn-small" target="_blank">Enquire on WhatsApp</a></div>
-                <div class="bat-card"><h3>Truck Batteries</h3><p>N150, N200 — heavy duty for commercial vehicles.</p><a href="https://wa.me/254748814167?text=Hi%2C%20I%20need%20an%20Amaron%20truck%20battery" class="btn btn-small" target="_blank">Enquire on WhatsApp</a></div>
-            </div>
-            <div class="bat-features">
-                <span>✅ Free Battery Testing</span>
-                <span>✅ On-Site Installation</span>
-                <span>✅ Old Battery Trade-In</span>
-                <span>✅ Warranty Included</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- NYAMA CHOMA -->
-    <section id="nyama" class="section nyama-section">
-        <div class="container">
-            <div class="section-header"><span class="tag fire-tag">🔥 Nyama Choma</span><h2>"Best Nyama Choma in Karen"</h2><p>Eat while you wait for your car. Freshly grilled to perfection.</p></div>
-            <div class="menu-grid">
-                <div class="menu-card"><h3>Nyama Choma</h3><p>Freshly grilled goat or beef. Served with ugali & kachumbari.</p></div>
-                <div class="menu-card"><h3>Ugali & Sukuma</h3><p>Classic Kenyan comfort food. Hot and fresh.</p></div>
-                <div class="menu-card"><h3>Chips & Sausage</h3><p>Golden fries with perfectly grilled sausage.</p></div>
-                <div class="menu-card"><h3>Cold Drinks</h3><p>Sodas, water, and juices to quench your thirst.</p></div>
-            </div>
-            <div class="nyama-cta">
-                <p>🍖 Order pickup via WhatsApp while your car gets washed!</p>
-                <a href="https://wa.me/254748814167?text=Hi%2C%20I'd%20like%20to%20order%20nyama%20choma" class="btn btn-primary" target="_blank">Order on WhatsApp</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- COMBOS -->
-    <section id="combos" class="section">
-        <div class="container">
-            <div class="section-header"><span class="tag">🎁 Combo Deals</span><h2>Wash + Eat Bundles</h2></div>
-            <div class="combo-grid">
-                <div class="combo-card"><h3>The Quick Stop</h3><p>Exterior Wash + Nyama Plate + Drink</p><span class="combo-badge">Save 15%</span></div>
-                <div class="combo-card featured"><h3>The Full Experience</h3><p>Full Valet + Nyama Choma for 2 + Drinks</p><span class="combo-badge">Most Popular</span></div>
-                <div class="combo-card"><h3>The Weekend Special</h3><p>Premium Wax + Nyama Feast + Drinks</p><span class="combo-badge">Best Value</span></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section contact-section">
-        <div class="container">
-            <div class="section-header"><span class="tag">📍 Find Us</span><h2>Visit K's Carwash Karen</h2></div>
-            <div class="contact-grid">
-                <div class="contact-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955!2d36.7!3d-1.32" width="100%" height="350" style="border:0;border-radius:12px" loading="lazy"></iframe></div>
-                <div class="contact-info">
-                    <div class="c-card"><h4>📍 Location</h4><p>Dagoretti Road, Karen, Nairobi</p></div>
-                    <div class="c-card"><h4>📞 Phone / WhatsApp</h4><p><a href="tel:+254748814167">+254 748 814167</a></p></div>
-                    <div class="c-card"><h4>🕐 Hours</h4><p>Monday – Sunday<br><strong>7:30AM – 10:00PM</strong></p></div>
-                    <a href="https://wa.me/254748814167" class="btn btn-primary btn-full" target="_blank">💬 WhatsApp Us</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer"><div class="container"><p>© 2024 K's Carwash Karen. Wash. Fuel Up. Eat. <a href="admin.html">Admin</a></p></div></footer>
-    <a href="https://wa.me/254748814167" class="whatsapp-float" target="_blank"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.638l4.685-1.367A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.319 0-4.476-.678-6.293-1.843l-.44-.282-3.065.894.826-3.14-.293-.454A9.958 9.958 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg></a>
-    <div class="toast" id="toast"></div>
-    <script src="script.js"></script>
+<nav class="navbar" id="navbar">
+<div class="nav-container">
+<a class="nav-logo" href="#home"><span class="logo-k">K's</span> Carwash Karen</a>
+<ul class="nav-links" id="navLinks">
+<li><a class="nav-link active" href="#home">Home</a></li>
+<li><a class="nav-link" href="#carwash">Carwash</a></li>
+<li><a class="nav-link" href="#batteries">Batteries</a></li>
+<li><a class="nav-link" href="#nyama">Nyama Choma</a></li>
+<li><a class="nav-link" href="#combos">Combos</a></li>
+<li><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+<a class="nav-cta" href="https://wa.me/254748814167" target="_blank">📞 Call Us</a>
+<button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</div>
+</nav>
+<!-- HERO -->
+<section class="hero" id="home" style=" background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://loremflickr.com/1200/800/car,wash?lock=100') !important; background-size: cover !important; background-position: center !important;">
+<div class="hero-content">
+<div class="hero-badge">⭐ 5.0 Google Rating • Open Until 10PM</div>
+<h1>WASH. FUEL UP. EAT.</h1>
+<p class="hero-tagline">Karen's Most Complete Stop</p>
+<p class="hero-sub">Professional carwash • Amaron batteries • Best nyama choma in Karen. All under one roof.</p>
+<div class="hero-pillars">
+<a class="pillar" href="#carwash"><span class="pillar-icon">🚗</span><span>CAR WASH</span></a>
+<a class="pillar" href="#batteries"><span class="pillar-icon">🔋</span><span>BATTERIES</span></a>
+<a class="pillar" href="#nyama"><span class="pillar-icon">🔥</span><span>NYAMA CHOMA</span></a>
+</div>
+<div class="hero-actions">
+<a class="btn btn-primary" href="#carwash">Book a Wash</a>
+<a class="btn btn-outline" href="https://wa.me/254748814167" target="_blank">WhatsApp Us</a>
+</div>
+</div>
+<div class="hours-banner">🕐 Open Daily 7:30AM – 10:00PM | 7 Days a Week</div>
+</section>
+<!-- CARWASH -->
+<section class="section" id="carwash">
+<div class="container">
+<div class="section-header"><span class="tag">🚗 Car Wash</span><h2>Professional Car Wash Services</h2></div>
+<div class="services-grid">
+<div class="svc-card"><h3>Exterior Wash</h3><p>Thorough hand wash, rinse, and dry. Tyre dressing included.</p><button class="btn btn-small" onclick="bookWash('Exterior Wash')">Book</button></div>
+<div class="svc-card"><h3>Interior Vacuum</h3><p>Full vacuum, dashboard wipe, door panels, boot.</p><button class="btn btn-small" onclick="bookWash('Interior Vacuum')">Book</button></div>
+<div class="svc-card featured"><h3>Full Valet</h3><p>Complete interior + exterior. Dashboard, seats, windows, tyre shine.</p><button class="btn btn-primary" onclick="bookWash('Full Valet')">Book</button></div>
+<div class="svc-card"><h3>Waxing</h3><p>Hand wax application for lasting shine and paint protection.</p><button class="btn btn-small" onclick="bookWash('Waxing')">Book</button></div>
+</div>
+<!-- Booking Form -->
+<div class="book-form-wrap" id="carwashBooking" style="display:none">
+<h3>Book Your Wash</h3>
+<form id="washForm">
+<div class="form-row"><div class="form-group"><label>Name *</label><input name="name" required="" type="text"/></div><div class="form-group"><label>Phone *</label><input name="phone" required="" type="tel"/></div></div>
+<div class="form-row"><div class="form-group"><label>Car Type</label><input name="car" placeholder="e.g. Toyota Prado" type="text"/></div><div class="form-group"><label>Service</label><input id="washService" name="service" readonly="" type="text"/></div></div>
+<div class="form-group"><label>Preferred Date</label><input name="date" type="date"/></div>
+<button class="btn btn-primary btn-full" type="submit">Submit Booking</button>
+</form>
+</div>
+</div>
+</section>
+<!-- BATTERIES -->
+<section class="section bat-section" id="batteries">
+<div class="container">
+<div class="section-header"><span class="tag bat-tag">🔋 Amaron Batteries</span><h2>Amaron Battery Sales &amp; Installation</h2><p>Full range for sedan, SUV, and truck. Free battery testing. On-site installation.</p></div>
+<div class="bat-grid">
+<div class="bat-card"><h3>Sedan Batteries</h3><p>DIN55, DIN66, NS60 — for small to mid-size cars.</p><a class="btn btn-small" href="https://wa.me/254748814167?text=Hi%2C%20I%20need%20an%20Amaron%20battery%20for%20my%20sedan" target="_blank">Enquire on WhatsApp</a></div>
+<div class="bat-card"><h3>SUV Batteries</h3><p>DIN88, DIN100 — for Land Cruisers, Prados, Range Rovers.</p><a class="btn btn-small" href="https://wa.me/254748814167?text=Hi%2C%20I%20need%20an%20Amaron%20battery%20for%20my%20SUV" target="_blank">Enquire on WhatsApp</a></div>
+<div class="bat-card"><h3>Truck Batteries</h3><p>N150, N200 — heavy duty for commercial vehicles.</p><a class="btn btn-small" href="https://wa.me/254748814167?text=Hi%2C%20I%20need%20an%20Amaron%20truck%20battery" target="_blank">Enquire on WhatsApp</a></div>
+</div>
+<div class="bat-features">
+<span>✅ Free Battery Testing</span>
+<span>✅ On-Site Installation</span>
+<span>✅ Old Battery Trade-In</span>
+<span>✅ Warranty Included</span>
+</div>
+</div>
+</section>
+<!-- NYAMA CHOMA -->
+<section class="section nyama-section" id="nyama">
+<div class="container">
+<div class="section-header"><span class="tag fire-tag">🔥 Nyama Choma</span><h2>"Best Nyama Choma in Karen"</h2><p>Eat while you wait for your car. Freshly grilled to perfection.</p></div>
+<div class="menu-grid">
+<div class="menu-card"><h3>Nyama Choma</h3><p>Freshly grilled goat or beef. Served with ugali &amp; kachumbari.</p></div>
+<div class="menu-card"><h3>Ugali &amp; Sukuma</h3><p>Classic Kenyan comfort food. Hot and fresh.</p></div>
+<div class="menu-card"><h3>Chips &amp; Sausage</h3><p>Golden fries with perfectly grilled sausage.</p></div>
+<div class="menu-card"><h3>Cold Drinks</h3><p>Sodas, water, and juices to quench your thirst.</p></div>
+</div>
+<div class="nyama-cta">
+<p>🍖 Order pickup via WhatsApp while your car gets washed!</p>
+<a class="btn btn-primary" href="https://wa.me/254748814167?text=Hi%2C%20I'd%20like%20to%20order%20nyama%20choma" target="_blank">Order on WhatsApp</a>
+</div>
+</div>
+</section>
+<!-- COMBOS -->
+<section class="section" id="combos">
+<div class="container">
+<div class="section-header"><span class="tag">🎁 Combo Deals</span><h2>Wash + Eat Bundles</h2></div>
+<div class="combo-grid">
+<div class="combo-card"><h3>The Quick Stop</h3><p>Exterior Wash + Nyama Plate + Drink</p><span class="combo-badge">Save 15%</span></div>
+<div class="combo-card featured"><h3>The Full Experience</h3><p>Full Valet + Nyama Choma for 2 + Drinks</p><span class="combo-badge">Most Popular</span></div>
+<div class="combo-card"><h3>The Weekend Special</h3><p>Premium Wax + Nyama Feast + Drinks</p><span class="combo-badge">Best Value</span></div>
+</div>
+</div>
+</section>
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
+<div class="container">
+<div class="section-header"><span class="tag">📍 Find Us</span><h2>Visit K's Carwash Karen</h2></div>
+<div class="contact-grid">
+<div class="contact-map"><iframe height="350" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955!2d36.7!3d-1.32" style="border:0;border-radius:12px" width="100%"></iframe></div>
+<div class="contact-info">
+<div class="c-card"><h4>📍 Location</h4><p>Dagoretti Road, Karen, Nairobi</p></div>
+<div class="c-card"><h4>📞 Phone / WhatsApp</h4><p><a href="tel:+254748814167">+254 748 814167</a></p></div>
+<div class="c-card"><h4>🕐 Hours</h4><p>Monday – Sunday<br/><strong>7:30AM – 10:00PM</strong></p></div>
+<a class="btn btn-primary btn-full" href="https://wa.me/254748814167" target="_blank">💬 WhatsApp Us</a>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer"><div class="container"><p>© 2024 K's Carwash Karen. Wash. Fuel Up. Eat. <a href="admin.html">Admin</a></p></div></footer>
+<a class="whatsapp-float" href="https://wa.me/254748814167" target="_blank"><svg fill="white" height="28" viewbox="0 0 24 24" width="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.638l4.685-1.367A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.319 0-4.476-.678-6.293-1.843l-.44-.282-3.065.894.826-3.14-.293-.454A9.958 9.958 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"></path></svg></a>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
 </body>
 </html>
